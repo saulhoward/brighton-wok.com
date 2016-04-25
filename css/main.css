@@ -989,7 +989,7 @@ a {
     margin-bottom: 10px; }
     .hero .quotes p {
       text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3); }
-    @media (min-width: 750px) {
+    @media (min-width: 1200px) {
       .hero .quotes {
         padding-top: 50px; }
         .hero .quotes p:nth-child(2) {
@@ -1003,7 +1003,8 @@ a {
     /* Larger than tablet */ }
     .hero .trailer img {
       width: 90%;
-      max-width: 615px; }
+      max-width: 615px;
+      min-height: 200px; }
     @media (min-width: 750px) {
       .hero .trailer {
         min-height: 600px;
