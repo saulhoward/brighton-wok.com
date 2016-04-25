@@ -14,7 +14,7 @@ function onYouTubePlayerAPIReady() {
 document.addEventListener("DOMContentLoaded", function(event) { 
     // Load the IFrame Player API code asynchronously.
     var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/player_api";
+    tag.src = "http://www.youtube.com/player_api";
     var firstScriptTag = document.getElementsByTagName('script')[0];
     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
@@ -23,9 +23,4 @@ document.addEventListener("DOMContentLoaded", function(event) {
         width = trailerDiv.offsetWidth;
         height = Math.ceil((width/16) * 9);
     }
-
-    // scroll reveal
-    window.sr = ScrollReveal({ scale: 1, duration: 750 });
-    sr.reveal('.reveal.left', { origin: 'left' });
-    sr.reveal('.reveal.right', { origin: 'right' });
 });
