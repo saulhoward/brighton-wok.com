@@ -1,0 +1,17 @@
+# Site settings
+#source: .
+title: Brighton Wok
+email: saul@convictfilms.com
+description: > # this means to ignore newlines until "baseurl:"
+    Ninjas! Ganja! Kung Fu! - The Legend of Ganja Boxing
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://brighton-wok.com" # the base hostname & protocol for your site
+twitter_username: brightonwok
+facebook_page: brightonwok
+
+exclude: [vendor, bin]
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
+highlighter: pygments

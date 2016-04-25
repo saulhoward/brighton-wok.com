@@ -1,0 +1,33 @@
+// ul list style
+ul {
+    list-style: disc outside;
+    padding-left: 40px;
+}
+
+// dl list style
+dl {
+    margin-bottom: 2em;
+    dd, dt {
+        line-height: 1.6;
+    }
+    dt {
+        font-style: italic;
+    }
+    &.dl-horizontal {
+        @media (min-width: 768px) {
+            dt {
+                float: left;
+                width: 160px;
+                overflow: hidden;
+                clear: left;
+                text-align: right;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            dd {
+                margin-left: 180px;
+            }
+        }
+    }
+}
+

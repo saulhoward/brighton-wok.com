@@ -1,0 +1,130 @@
+---
+page-title: Brighton Wok
+id: index
+permalink: /
+---
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+
+    <body>
+        <header class="hero">
+            <div class="topline">
+
+                        <div class="site-nav">
+                            <nav class="menu menu-horizontal">
+                            <ul class="menu-list">
+                                {% for page in site.pages %}
+                                    {% if page.id != "cv" and page.id != "index" and page.title %}
+                                        <li class="menu-item">
+                                            <a class="menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                                        </li>
+                                    {% endif %}
+                                {% endfor %}
+                            </ul>
+                            </nav>
+                        </div>
+            </div>
+
+            <div class="row">
+                <div class="one-half column">
+                    <div class="title-wrapper">
+                        <div class="title">
+                            <h1><a href="{{ site.baseurl }}/">Brighton Wok</a></h1>
+                        </div>
+                        <div class="description">
+                            <p>
+                                The Legend of Ganja Boxing
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quotes">
+                        <p>
+                            A <strong>rare treat</strong>, action packed British film making at its creative best.
+                            <br/>
+                            <span class="author">Dragon Magazine</span>
+                        </p>
+                        <p>
+                            Fast becoming a <strong>cult classic</strong>... a brilliant pastiche of the kung fu genre.
+                            <br/>
+                            <span class="author">The Argus</span>
+                        </p>
+                    </div>
+
+                </div>
+                <div class="one-half column">
+                    <div class="trailer">
+                        <div id="ytplayer">
+                        <img src="/img/play-trailer.jpg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="page-content amazon">
+        <div class="container">
+            <div class="row">
+                <div class="one-third column">
+                    <div class="reveal left">
+                        <a rel="nofollow" href="http://www.amazon.co.uk/gp/product/B014DKKH32/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B014DKKH32&linkCode=as2&tag=saulhowcom-21"><img border="0" src="http://ws-eu.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B014DKKH32&Format=_SL250_&ID=AsinImage&MarketPlace=GB&ServiceVersion=20070822&WS=1&tag=saulhowcom-21" ></a><img src="http://ir-uk.amazon-adsystem.com/e/ir?t=saulhowcom-21&l=as2&o=2&a=B014DKKH32" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
+                    </div>
+                </div>
+
+                <div class="one-third column">
+                    <h3>Get the DVD</h3>
+                    <p>
+                        <strong>Brighton Wok: The Legend of Ganja Boxing</strong> is now
+                        available to buy on DVD from <a href="http://www.amazon.co.uk/gp/product/B014DKKH32/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B014DKKH32&linkCode=as2&tag=saulhowcom-21">Amazon.co.uk</a>.
+                    </p>
+                    <div>
+                        <a href="http://www.amazon.co.uk/gp/product/B014DKKH32/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=B014DKKH32&linkCode=as2&tag=saulhowcom-21">
+                            <img src="/img/buy-at-amazon-co-uk-button-300x57.png" />
+                        </a>
+                        <small class="other-options"><a href="/get-the-dvd.html">Other options ></a></small>
+                    </div>
+                </div>
+
+                <div class="one-third column">
+                    <div>
+                        <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-eu.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=GB&source=ss&ref=ss_til&ad_type=product_link&tracking_id=saulhowcom-21&marketplace=amazon&region=GB&placement=B014DKKH32&asins=B014DKKH32&linkId=&show_border=true&link_opens_in_new_window=true">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <div class="page-content alt facebook">
+        <div class="container">
+            <div class="row">
+                <div class="one-half column">
+                    <div class="fb-page" data-href="https://www.facebook.com/brightonwok/" data-tabs="timeline" data-width="500" data-height="400" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/brightonwok/"><a href="https://www.facebook.com/brightonwok/">Brighton Wok: The Legend of Ganja Boxing</a></blockquote></div></div>
+                </div>
+                <div class="one-half column">
+                    <h3>Facebook</h3>
+                    <p>
+                    Check out what people are saying about <strong>Brighton Wok</strong> on
+                    Facebook.
+                    </p>
+                    <p>
+                    <div class="fb-like" data-href="http://brighton-wok.com" data-layout="standard" data-action="like" data-show-faces="true" data-share="true" data-colorscheme="dark"></div>
+                    </p>
+                    <div class="quotes">
+                        <p>
+                        An <strong>instant classic</strong> of the genre, this ain't no Karate Kid!
+                        <br/>
+                        <span class="author">Big Jim KUCI 88.9FM Cali.</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        {% include footer.html %}
+        {% include js.html %}
+    </body>
+
+</html>
