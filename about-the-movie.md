@@ -35,7 +35,7 @@ true cult classic.
 
 <div class="trailer">
     <div id="ytplayer">
-    <img src="/img/play-trailer.jpg" />
+    <a href="https://www.youtube.com/watch?v=-EKR9xHllEA"><img src="/img/play-trailer.jpg" /></a>
     </div>
 </div>
 
