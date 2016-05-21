@@ -336,6 +336,18 @@ a {
     }
 }
 
+.facebook {
+    .fb-page, 
+    .fb-page span, 
+    .fb-page span iframe[style] { 
+        width: 100% !important; 
+    }
+    .facebook-like {
+        width: 100% !important; 
+        overflow: hidden;
+    }
+}
+
 .quotes {
     color: $c-text-light-on-dark-primary;
 
