@@ -12,6 +12,6 @@ facebook_page: brightonwok
 exclude: [vendor, bin]
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
 highlighter: pygments
